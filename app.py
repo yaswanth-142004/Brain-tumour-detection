@@ -94,8 +94,8 @@ def predict_segmentation(model, image, threshold=0.2, hebbian_iterations=15):
 
 # Page Configuration
 st.set_page_config(
-    page_title="Brain Tumor Segmentation",
-    page_icon="🧠",
+    page_title="LGG MRI SEGMENTATION",
+    page_icon="brain_image_lol.png",
     layout="wide"
 )
 
@@ -125,7 +125,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown('<div class="main-header">🧠 Brain Tumor Segmentation</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"> LGG MRI Segmentation by using U-NET </div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Advanced MRI Analysis using U-Net + RBF Neural Network with Hebbian Learning</div>', unsafe_allow_html=True)
 
 # Sidebar
@@ -162,14 +162,16 @@ with st.sidebar:
     - **Hebbian Learning**: For post-processing and smoothing
     
     **Model Performance:**
-    - Dice Coefficient: ~0.83
-    - IoU: ~0.71
-    - Sensitivity: ~0.83
+    - Dice Coefficient: ~0.88
+    - IoU: ~0.84
+    - Sensitivity: ~0.934
+    - Specificity: ~0.99
+    - Hausdorff distance: 6.84
     """)
     
     st.divider()
     
-    st.markdown("**Made with ❤️ using Streamlit**")
+    st.markdown("**Built this with guidance from : Dr Prasun Dutta **")
 
 # Main Content
 model = load_model()

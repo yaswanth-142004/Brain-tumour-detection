@@ -171,7 +171,7 @@ with st.sidebar:
     
     st.divider()
     
-    st.markdown("**Built this with guidance from : Dr Prasun Dutta **")
+    st.markdown("___ Built this with guidance from : Dr Prasun Dutta (SRM-AP) _____")
 
 # Main Content
 model = load_model()
